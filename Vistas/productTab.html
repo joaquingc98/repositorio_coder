@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/main.css">
+
+    <title>DrinkIT</title>
+  </head>
+  <body class="grey">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../Media/drinkITLogo.png" alt="DrinkIT Logo" height="80"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html" target="_self">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./drinksTab.html">Drinks</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./companyTab.html" target="_self">Company</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" target="_self">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactTab.html" target="_self">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="mt-3">
+        <section>
+            <div class="container-fluid titleBox">
+                <h2 class="pt-1 mainProduct">DrinkIT: The Automated Bartender</h2>
+            </div>
+            <div class="container">
+                <div class="row mt-4 mb-4">
+                    <img src="../Media/fotoDrinkIT.png" alt="Product Image" class="col-lg-6 img-fluid"/>
+                    <p class="col-lg-6 mt-3">Para comenzar a utilizar la máquina, lo primero que se debe hacer es ubicar las botellas de alcohol deseadas dentro del compartimiento señalizado en la imagen 2. Una vez posicionadas las mismas, se debe insertar la manguera correspondiente. A cada botella le corresponde una única manguera. Éstas son las que conducen el fluido, mediante la utilización de una bomba, desde la botella hasta el vaso del cliente. <br><br>
+                    Luego, se debe enchufar el modelo a una toma de corriente y encenderla con el botón ubicado en la parte izquierda del modelo. Para evitar problemas, una vez que se prende dejar unos 15 segundos que los componentes y las luces se hayan prendido bien.
+                    Paso siguiente, se debe colocar hielo hasta la mitad del vaso. Los tiempos de servido de la máquina tienen en consideración que el vaso estará previamente cargado con hielo. El mismo, además de enfriar el trago, producirá un efecto de mezclador, logrando la unión de las distintas bebidas involucradas en el trago.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid titleBox">
+                <h2 class="pt-1" id="tecnicalInfo">Modelado y Especificaciones</h2>
+            </div>
+            <div class="container specs__container">
+                <img src="../Media/ploteado.jpg" alt="ploteado DrinkIT" class="img-fluid">
+                <table border="1px" cellspacing="10" cellpadding="10" class="mt1 mb1 mr1">
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Especificaciones</th>
+                        <th>Cantidad</th>
+                        <th>Uso</th>
+                    </tr>
+                    <tr>
+                        <td>Sensor Ultrasonico</td>
+                        <td>
+                            <ul>
+                                <li>V Nominal: 5V</li>
+                                <li>I nominal: 15mA</li>
+                                <li>Distancia de operacion: 2cm a 400 cm</li>
+                            </ul>
+                        </td>
+                        <td>1</td>
+                        <td>Deteccion del vaso</td>
+                    </tr>
+                    <tr>
+                        <td>Bombas DC</td>
+                        <td> 
+                            <ul>
+                                <li>V Nominal: 12V</li>
+                                <li>I nominal: 1.5A</li>
+                                <li>Modelo: Rs-360sh</li>
+                            </ul>
+                        </td>
+                        <td>4</td>
+                        <td>Suministro de liquido</td>
+                    </tr>
+                    <tr>
+                        <td>Arduino UNO</td>
+                        <td> 
+                            <ul>
+                                <li>V Nominal: 5V</li>
+                                <li>Microcontrolador: ATmega328</li>
+                                <li>14 pines digitales de I/O</li>
+                                <li>6 entradas analogas</li>
+                                <li>32k de memoria Flash</li>
+                                <li>Relok de 16 MHz de velocidad</li>
+                            </ul>
+                        </td>
+                        <td>4</td>
+                        <td>Suministro de liquido</td>
+                    </tr>
+                    <tr>
+                        <td>Diodos rectificadores</td>
+                        <td> 
+                            <ul>
+                                <li>V Nominal: 1000V</li>
+                                <li>I nominal: 1A</li>
+                            </ul>
+                        </td>
+                        <td>4</td>
+                        <td>Seguridad Electrica</td>
+                    </tr>
+                    <tr>
+                        <td>Tira LED</td>
+                        <td> 
+                            <ul>
+                                <li>V Nominal: 12V</li>
+                            <li>Consumo: 17,5W/m</li>
+                        </ul>
+                    </td>
+                    <td>1 metro</td>
+                    <td>Iluminacion</td>
+                    </tr>
+                    <tr>
+                        <td>Fuente</td>
+                        <td> 
+                            <ul>
+                                <li>V Input: 220 CA</li>
+                                <li>V output: 5V CC, 12V CC</li>
+                            </ul>
+                        </td>
+                        <td>1</td>
+                        <td>Suministro de energia</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__logo mb-4">
+            <img src="../Media/drinkITSticker.png" alt="Logo2" height="100">
+            <h2 class="pt-1 ml-1 mt-4">Explore DrinkIT</h2>
+        </div>
+        <div class="footer__legalInfo">
+            <ul>
+                <li>Terminos de uso</li>
+                <li>Acerca de DrinkIT</li>
+                <li>Politica de privacidad</li>
+                <li>AdChoices</li>
+            </ul>
+        </div>
+        <div class="footer__socialMedia ml-1">
+            <a href="https://www.linkedin.com/in/joaquin-gomez-codino-073361180/" target="_blank">
+                <img src="../Media/linkedIn.png" alt="Logo LinkedIN" height="50">
+            </a>
+            <a href="https://www.instagram.com/joacogomezc/?hl=es-la" target="_blank">
+                <img src="../Media/instagram.png" alt="Logo Instagram" height="50">
+            </a>
+            <a href="https://twitter.com/joacogomezc" target="_blank">
+                <img src="../Media/twitter.png" alt="Logo Twitter" height="50">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+video{
+    width: $fullWidth - 20vw;
+    height: $fullHeight - 40vh;
+    margin: 0px;
+}
+
+.video{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    &__vidContainer{
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+
+.row{
+    justify-content: space-evenly;
+}
+
+.reason{
+    &__container{
+        background-color: rgb(243, 241, 241);
+        border-radius: 5px;
+        width: auto;
+        margin-right: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+    }
+}
+
+
+.reasonDescription{
+    width: 250px;
+    margin-left: 10px;
+}
+
+.reasonImg{
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.reasonsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    justify-items: center;
+    max-width: $totalWidth;
+}

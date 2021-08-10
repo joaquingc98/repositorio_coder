@@ -1,0 +1,90 @@
+.drinksGridContainer{
+    display: grid;
+    grid-template-rows: 300px 3fr 0.25fr ;
+}
+
+.drinks{
+    &__container{
+        background-color: rgb(243, 241, 241);
+        border-radius: 5px;
+        box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+        width: 300px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        &__description{
+            width: 250px;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+.drinkImg{
+    margin: 10px;
+    border-radius: 5px;
+    height: 200px;
+}
+
+
+/* -------------------------------------------------------- */
+
+/* COMPANY PAGE */
+
+.companyGridContainer{
+    display: grid;
+    grid-template-rows: 300px 7fr 0.25fr ;
+}
+
+.groupImage{
+    height: $fullHeight - 60vh;
+    width: $totalWidth - 10%;
+}
+
+.ideaContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ideaDescription{
+    width: auto;
+}
+
+.members{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+.membersTop{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+
+}
+.membersBottom{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.memberImg{
+    height: 300px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.containerType3{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}

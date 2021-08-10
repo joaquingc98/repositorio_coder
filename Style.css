@@ -1,0 +1,511 @@
+/* Objetivos especificos (2da entrega):
+    1: Utilizar grids para la estructura de cada una de las secciones de las paginas
+    2: Utilizar flexbox y grids para alinear los elementos. */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* CLASES GENERALES */
+.pt1{
+    padding-top: 10px;
+}
+
+.ml1{
+    margin-left: 10px;
+}
+
+.ml2{
+    margin-left: 20px;
+}
+
+.mt1{
+    margin-top: 10px;
+}
+
+.mb1{
+    margin-bottom: 10px;
+}
+
+.mr1{
+    margin-right: 10px;
+}
+
+h2{
+    color:white;
+    font-family: arial;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+p{
+    color:rgb(237,102,43);
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+}
+
+h3{
+    color: rgb(4,68,118);
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-size: medium;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+.titleBox{
+    background-image: linear-gradient(to left, rgb(237,102,43),rgb(4,68,118));
+    height: auto;
+    width: 96vw;
+}
+
+/* -------------------------------------------------------- */
+
+/* MOBILE FIRST */
+
+ /* HEADER Y NAVBAR GENERAL */
+.drinkBlue{
+    background-color: rgb(4,68,118);
+}
+
+.drinkOrange{
+    color: rgb(237,102,43)
+}
+
+.grey{
+    background-color: rgb(236, 236, 236);
+}
+
+.logo{
+    width: fit-content;
+    height: 30vh;
+}
+
+
+/* -------------------------------------------------------- */
+
+/* INDEX PAGE*/
+
+.indexGridContainer{
+    display: grid;
+    grid-template-rows: 300px 7fr 0.25fr ;
+}
+
+video{
+    width: 80vw;
+    height: 60vh;
+    margin: 0px;
+}
+
+.row{
+    justify-content: space-evenly;
+}
+.video{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.nuestroProducto{
+    display: flex;
+    flex-direction: column;
+}
+
+.productImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productImage{
+    height: 40vh;
+    width: auto;
+    max-width: 80vw;
+}
+
+.center{
+    justify-content: center;
+}
+
+.prodDescription{
+    width: auto;
+    max-width: 100vw;
+}
+
+.containerType1{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    width: auto;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+}
+
+.reasonDescription{
+    width: 250px;
+    margin-left: 10px;
+}
+
+.reasonImg{
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.reasonsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    justify-items: center;
+    max-width: 100%;
+}
+
+/* -------------------------------------------------------- */
+
+/* DRINKS PAGE */
+
+.drinksGridContainer{
+    display: grid;
+    grid-template-rows: 300px 3fr 0.25fr ;
+}
+
+.drinksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.drinkDescription{
+    width: 250px;
+    margin-left: 10px;
+}
+
+.specsDescription{
+    width: auto;
+}
+
+.containerType2{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+
+.drinkImg{
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    height: 200px;
+}
+
+
+/* -------------------------------------------------------- */
+
+/* COMPANY PAGE */
+
+.companyGridContainer{
+    display: grid;
+    grid-template-rows: 300px 7fr 0.25fr ;
+}
+
+.groupImage{
+    height: 40vh;
+    width: 90%;
+}
+
+.ideaContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ideaDescription{
+    width: auto;
+}
+
+.members{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+.membersTop{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+
+}
+.membersBottom{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.memberImg{
+    height: 300px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.containerType3{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* -------------------------------------------------------- */
+
+
+/* PRODUCT PAGE */
+
+.productGridContainer{
+    display: grid;
+    grid-template-rows: 300px 7fr 0.25fr ;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+.specsDescription{
+    width: 90%;
+    height: auto;
+ }
+
+ ul.specsList{
+    height: 20px;
+    width: 20px;
+}
+li.specsList{
+    color:rgb(4,68,118);
+    font-family: arial;
+    font-style: normal;
+}
+
+.specsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    overflow-x: scroll;
+}
+
+.specsImg{
+    height: 35vh;
+    width: 70%;
+}
+
+th{
+    font-size: 20px;
+    color: rgb(237,102,43);
+    background-color: rgb(4,68,118); ;
+}
+
+td{
+    font-size: 15px;
+    color:rgb(4,68,118); ;
+}
+
+table{
+    border-radius: 10px;
+}
+
+/* -------------------------------------------------------- */
+
+/* CONTACT PAGE */
+.contactGridContainer{
+    display: grid;
+    grid-template-rows: 300px 2.5fr 0.25fr ;
+}
+
+legend{
+    color:rgb(237,102,43);
+    font-size: large;
+    font-family: arial;
+    font-style: normal;
+}
+
+label{
+    color:rgb(4,68,118);;
+    font-size: small;
+    font-family: arial;
+    font-style: normal;
+}
+
+.contactInput{
+    border-color: rgb(4,68,118);
+}
+
+form{
+    border-color: rgb(237,102,43);
+    border-width: 3px;
+}
+
+td{
+    text-align: center;
+}
+td ul{
+    text-align: left;
+}
+
+/* -------------------------------------------------------- */
+
+/* FOOTER */
+
+footer{
+    background-image: linear-gradient(rgb(99, 99, 99), #ccc);
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLogo{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-flex;
+}
+
+.socialMedia a{
+    text-decoration: none;
+}
+
+.legalInfo{
+    margin-bottom: 10px;
+}
+
+.legalInfo ul{
+    padding-left: 10px;
+}
+
+.legalInfo li{
+    color:rgb(4,68,118);
+    font-family: arial;
+    font-style: normal;
+    display: inline;
+    margin-bottom: 10px;
+}
+.legalInfo li:after{
+    content: " |"
+}
+
+/* -------------------------------------------------------- */
+
+
+
+/* ARRANCA MEDIA QUERYS----------------------------------------------------- */
+
+
+/* Para tablet */
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+
+    .members{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px ;
+        margin-bottom: 20px;
+    }
+
+    .membersTop{
+        display: flex;
+        flex-direction: row;
+        justify-content:start;
+    }
+    .membersBottom{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: start;
+        margin-top: 20px;
+
+    }
+    
+}
+
+/* GENERIC COMPUTER */
+@media only screen and (min-width: 1200px){
+
+    footer{
+        background-image: linear-gradient(rgb(99, 99, 99), #ccc);
+        height: 180px;
+        position: relative;
+       
+    }
+    
+    .socialMedia{
+       position: absolute;
+       top: 50px;
+       right: 30px;
+    }
+
+      .nuestroProducto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerType1:hover{
+        transform: scale(1.25,1.25);
+        z-index: 10;
+    }
+
+
+    .containerType2:hover{
+        transform: scale(1.25,1.25);
+        z-index: 10;
+    }
+
+    .members{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px ;
+        margin-bottom: 20px;
+    }
+
+    .membersTop{
+        display: flex;
+        flex-direction: row;
+        justify-content:center ;
+    
+    }
+    .membersBottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    
+    .containerType3:hover{
+        transform: scale(1.2,1.2);
+        z-index: 10;
+    }
+
+    .specsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95vw;
+        overflow-x: hidden;
+    }
+
+    table{
+        width: 100%;
+    }
+
+}

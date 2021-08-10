@@ -1,0 +1,61 @@
+.pt1{
+    padding-top: 10px;
+}
+
+.ml1{
+    margin-left: 10px;
+}
+
+.ml2{
+    margin-left: 20px;
+}
+
+.mt1{
+    margin-top: 10px;
+}
+
+.mb1{
+    margin-bottom: 10px;
+}
+
+.mr1{
+    margin-right: 10px;
+}
+
+h2{
+    color:white;
+    font-family: arial;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+p{
+    color:$drinkITOrange;
+    font-family: $drinkITFont;
+    font-style: normal;
+}
+
+h3{
+    color: $drinkITBlue;
+    font-family: $drinkITFont;
+    font-style: normal;
+    font-size: medium;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.titleBox{
+    background-image: linear-gradient(to left, $drinkITOrange,$drinkITBlue);
+    height: auto;
+    width: 96vw;
+}
+
+.grey{
+    background-color: rgb(236, 236, 236);
+}
+
+.center{
+    justify-content: center;
+}
+    

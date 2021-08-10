@@ -1,0 +1,766 @@
+/* Objetivos especificos (2da entrega):
+    1: Utilizar grids para la estructura de cada una de las secciones de las paginas
+    2: Utilizar flexbox y grids para alinear los elementos. */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* CLASES GENERALES */
+.pt1{
+    padding-top: 10px;
+}
+
+.ml1{
+    margin-left: 10px;
+}
+
+.ml2{
+    margin-left: 20px;
+}
+
+.mt1{
+    margin-top: 10px;
+}
+
+.mb1{
+    margin-bottom: 10px;
+}
+
+.mr1{
+    margin-right: 10px;
+}
+
+h2{
+    color:white;
+    font-family: arial;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+p{
+    color:rgb(237,102,43);
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+}
+
+h3{
+    color: rgb(4,68,118);
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-size: medium;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+main{
+    margin-top: 15px;
+}
+
+.titleBox{
+    background-image: linear-gradient(to left, rgb(237,102,43),rgb(4,68,118));
+    height: auto;
+    width: 96vw;
+}
+
+/* -------------------------------------------------------- */
+
+/* MOBILE FIRST */
+
+ /* HEADER Y NAVBAR GENERAL */
+header{
+    background-color: rgb(4,68,118);
+    height: auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: fit-content;
+    height: 30vh;
+}
+
+.menu ul{
+    list-style: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-top: 0;
+}
+
+.menu li{
+    padding: 5px ;
+    display: block;
+    border: 2px solid rgb(237,102,43);
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 90vw;
+}
+
+
+li.inactiveLink{
+    color:rgb(237,102,43);
+    display: block;
+    font-family: arial;
+    font-style: normal;
+    font-weight: normal;
+    list-style: none;
+}
+
+li.activeLink{
+    color:rgb(255, 255, 255);
+    display: block;
+    font-family: arial;
+    font-style: normal;
+    font-weight: bold;
+    list-style: none;
+}
+a.navList{  
+    color:rgb(237,102,43);
+    font-family: arial;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:active{
+    color:rgb(255, 255, 255);
+    font-family: arial;
+    font-style: normal;
+}
+
+/* -------------------------------------------------------- */
+
+/* INDEX PAGE*/
+
+.indexGridContainer{
+    display: grid;
+    grid-template-rows: 300px 7fr 0.25fr ;
+}
+
+video{
+    width: 80vw;
+    height: 40vh;
+    margin: 0px;
+}
+.video{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.nuestroProducto{
+    display: flex;
+    flex-direction: column;
+}
+
+.productImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productImage{
+    height: 40vh;
+    max-width: 80vw;
+}
+
+.prodDescription{
+    width: fit-content;
+    max-width: 100vw;
+}
+
+.containerType1{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+}
+
+.reasonDescription{
+    width: 250px;
+    margin-left: 10px;
+}
+
+.reasonImg{
+    margin-left: 70px;
+}
+
+.reasonsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    justify-items: center;
+    max-width: 100%;
+}
+
+/* -------------------------------------------------------- */
+
+/* DRINKS PAGE */
+
+.drinksGridContainer{
+    display: grid;
+    grid-template-rows: 300px 3fr 0.25fr ;
+}
+
+.drinksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.drinkDescription{
+    width: 250px;
+    margin-left: 10px;
+}
+
+.specsDescription{
+    width: auto;
+}
+
+.containerType2{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+
+.drinkImg{
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    height: 200px;
+}
+
+
+/* -------------------------------------------------------- */
+
+/* COMPANY PAGE */
+
+.companyGridContainer{
+    display: grid;
+    grid-template-rows: 300px 7fr 0.25fr ;
+}
+
+.groupImage{
+    height: 40vh;
+    width: 90%;
+}
+
+.ideaContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ideaDescription{
+    width: auto;
+}
+
+.members{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+.membersTop{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+
+}
+.membersBottom{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.memberImg{
+    height: 300px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.containerType3{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* -------------------------------------------------------- */
+
+
+/* PRODUCT PAGE */
+
+.productGridContainer{
+    display: grid;
+    grid-template-rows: 300px 7fr 0.25fr ;
+}
+
+.productImg{
+    height: 40vh;
+    width: 90%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    max-width: 100vw;
+}
+
+.specsDescription{
+    width: 90%;
+    height: auto;
+ }
+
+ ul.specsList{
+    height: 20px;
+    width: 20px;
+}
+li.specsList{
+    color:rgb(4,68,118);
+    font-family: arial;
+    font-style: normal;
+}
+
+.specsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    overflow-x: scroll;
+}
+
+.specsImg{
+    height: 35vh;
+    width: 70%;
+}
+
+th{
+    font-size: 20px;
+    color: rgb(237,102,43);
+    background-color: rgb(4,68,118); ;
+}
+
+td{
+    font-size: 15px;
+    color:rgb(4,68,118); ;
+}
+
+table{
+    border-radius: 10px;
+}
+
+/* -------------------------------------------------------- */
+
+/* CONTACT PAGE */
+.contactGridContainer{
+    display: grid;
+    grid-template-rows: 300px 2.5fr 0.25fr ;
+}
+
+legend{
+    color:rgb(237,102,43);
+    font-size: large;
+    font-family: arial;
+    font-style: normal;
+}
+
+label{
+    color:rgb(4,68,118);;
+    font-size: small;
+    font-family: arial;
+    font-style: normal;
+}
+
+.contactInput{
+    border-color: rgb(4,68,118);
+}
+
+form{
+    border-color: rgb(237,102,43);
+    border-width: 3px;
+}
+
+td{
+    text-align: center;
+}
+td ul{
+    text-align: left;
+}
+
+/* -------------------------------------------------------- */
+
+/* FOOTER */
+
+footer{
+    background-image: linear-gradient(rgb(99, 99, 99), #ccc);
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLogo{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-flex;
+}
+
+.socialMedia a{
+    text-decoration: none;
+}
+
+.legalInfo{
+    margin-bottom: 10px;
+}
+
+.legalInfo ul{
+    padding-left: 10px;
+}
+
+.legalInfo li{
+    color:rgb(4,68,118);
+    font-family: arial;
+    font-style: normal;
+    display: inline;
+    margin-bottom: 10px;
+}
+.legalInfo li:after{
+    content: " |"
+}
+
+/* -------------------------------------------------------- */
+
+
+
+/* ARRANCA MEDIA QUERYS----------------------------------------------------- */
+
+
+/* Para tablet */
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .reasonsContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 20px;
+        justify-items:center
+    }
+
+    .containerType1{
+        margin-bottom: 10px;
+    }
+
+
+    .productImage{
+        height: 70vh;
+    }
+
+
+
+    .drinksContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr ;
+    }
+
+    .ideaDescription{
+        width: 89vw;
+    }
+
+    .members{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px ;
+        margin-bottom: 20px;
+    }
+
+    .membersTop{
+        display: flex;
+        flex-direction: row;
+        justify-content:start ;
+    
+    }
+    .membersBottom{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: start;
+        margin-top: 20px;
+
+    }
+    
+}
+
+/* GENERIC COMPUTER */
+@media only screen and (min-width: 1200px){
+
+    
+    .indexGridContainer{
+        display: grid;
+        grid-template-rows: 115px 7fr 0.5fr ;
+    }
+
+    /* DRINKS */
+    .drinksGridContainer{
+        display: grid;
+        grid-template-rows: 115px 3fr 0.5fr ;
+    }
+
+    /* COMPANY */
+    .companyGridContainer{
+        display: grid;
+        grid-template-rows: 115px 7fr 0.5fr ;
+    }
+
+    /* PRODUCT */
+    .productGridContainer{
+        display: grid;
+        grid-template-rows: 115px 7fr 0.5fr ;
+    }
+
+    /* CONTACT */
+    .contactGridContainer{
+        display: grid;
+        grid-template-rows: 115px 2.5fr 0.5fr ;
+    }
+
+    .titleBox{
+        background-image: linear-gradient(to left, rgb(237,102,43),rgb(4,68,118));
+        height: auto;
+        width: auto;
+    }
+
+    header{
+        background-color: rgb(4,68,118);
+        height: max-content;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+      }
+    
+    
+    nav{
+        margin-right: 30px;
+    }
+
+    video{
+        width: 60vw;
+        height: 70vh;
+        margin: 0px;
+    }
+
+    .logo{
+        height: 90px;
+    }
+
+    .menu ul{
+        list-style: none;
+        width: auto;
+        height: auto;
+    }
+    
+    .menu li{
+        padding: 5px ;
+        display: inline;
+        border: 2px solid rgb(237,102,43);
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    
+    
+    li.inactiveLink{
+        color:rgb(237,102,43);
+        display: inline;
+        font-family: arial;
+        font-style: normal;
+        font-weight: normal;
+        list-style: none;
+    }
+    
+    li.activeLink{
+        color:rgb(255, 255, 255);
+        display: inline;
+        font-family: arial;
+        font-style: normal;
+        font-weight: bold;
+        list-style: none;
+    }
+
+    footer{
+        background-image: linear-gradient(rgb(99, 99, 99), #ccc);
+        height: 180px;
+        position: relative;
+       
+    }
+    
+    
+    .socialMedia{
+       position: absolute;
+       top: 50px;
+       right: 30px;
+    }
+
+      .nuestroProducto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productImages{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 95vw;
+    }
+
+    .productImage{
+        height: 60vh;
+    }
+
+    .prodDescription{
+        width: fit-content;
+        max-width: 90vw;
+    }
+
+    .reasonsContainer{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        justify-content:space-evenly
+    }
+
+    .containerType1{
+        background-color: rgb(243, 241, 241);
+        border-radius: 5px;
+        width: auto;
+        margin-left: 10px;
+        box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+    }
+
+    .containerType1:hover{
+        transform: scale(1.5,1.5);
+        z-index: 10;
+    }
+
+    .drinksContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .containerType2{
+        background-color: rgb(243, 241, 241);
+        border-radius: 5px;
+        box-shadow: 1.5px 1.5px rgb(153, 153, 153);
+        width: 300px;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containerType2:hover{
+        transform: scale(1.3,1.3);
+        z-index: 10;
+    }
+
+    .ideaContainer{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .groupImage{
+        height: 70vh;
+        width: auto;
+    }
+
+    .ideaDescription{
+        width: auto;
+        max-width: 500px;
+        margin-left: 20px;
+    }
+
+    .members{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px ;
+        margin-bottom: 20px;
+    }
+
+    .membersTop{
+        display: flex;
+        flex-direction: row;
+        justify-content:center ;
+    
+    }
+    .membersBottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    
+    .containerType3:hover{
+        transform: scale(1.2,1.2);
+        z-index: 10;
+    }
+
+    .productImg{
+        height: 50vh;
+        width: auto
+    }
+
+    .product{
+        flex-direction: row;
+        max-width: 90vw;
+
+    }
+
+    .specsDescription{
+        margin-left: 20px;
+        width: 30vw;
+     }
+
+     .specsImg{
+        height: 70vh;
+        width: 90%;
+    }
+
+    .specsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95vw;
+        overflow-x: hidden;
+    }
+
+    table{
+        width: 100%;
+    }
+
+}
+
+
