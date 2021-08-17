@@ -1,0 +1,22 @@
+KeyWords Agregadas:
+    INDEX: BEBIDAS, AUTOMATIZACIÓN, FIESTA, TRAGOS, ROBÓTICA, INGENIERÍA, APLICACIÓN
+    DRINKS: BEBIDAS, FIESTA, TRAGOS, APLICACIÓN, VODKA, GIN, LIMONADA, NARANJA, JUGO, CAMPARI
+    COMPANY: AMIGOS, INGENIERÍA, PROYECTO, MECATRONICA, AUTOMATIZACIÓN, APLICACIÓN, UNIVERSIDAD
+    PRODUCT: MAQUINA, TRAGOS, ESPECIFICACIONES, TECNICO, MECANICA, ELECTRONICA, APLICACIÓN, SOFTWARE, HARDWARE
+    CONTACT: CONTACTO, COMUNICACIÓN, RELACIONES, SOCIALES, RED
+
+Titulos Agregados/Cambiados:
+    INDEX: DrinkIT
+    DRINKS: Drinks | DrinkIT
+    COMPANY: Company | DrinkIT
+    PRODUCT: Product | DrinkIT
+    CONTACT: Contact | DrinkIT
+
+Descripciones Agregadas:
+    INDEX: DrinkIT automatiza la creación de tragos a eleccion, estandariza los tragos y ahorra tiempo y dinero!
+    DRINKS: Con DrinkIT crea los mejores tragos tales como destornillador, Campari Orange y muchos mas!
+    COMPANY: DrinkIT comienza como un proyecto de ingenieria, pero termino como algo mucho mas grande...
+    PRODUCT: DrinkIT combina hardware y software para traer con la mejor presicion y velocidad los tragos solicitados en la app
+    CONTACT: Ponete en contacto con nosotros y recibi tu propio DrinkIT. Util tanto para el hogar como para tu negocio!
+
+Encabezado: Ya agregado previamente
