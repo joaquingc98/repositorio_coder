@@ -372,16 +372,11 @@ label {
   color: #044476;
   font-size: 15px;
   font-family: arial;
-  font-style: normal;
+  font-style: bold;
 }
 
 .contactInput {
   border-color: #044476;
-}
-
-.form {
-  border-color: #ed662b;
-  border-width: 3px;
 }
 
 /* -------------------------------------------------------- */

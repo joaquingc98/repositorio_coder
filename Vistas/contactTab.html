@@ -49,52 +49,57 @@
         <div class="container titleBox">
             <h2 class="pt-1">Ponete en contacto con nosotros!</h2>
         </div>
-        <form class="container" action="#" method="GET" >
-            <fieldset>
-                <legend>Informacion de contacto</legend>
-                <div>
-                    <label>Nombre y Apellido</label>
-                    <input type="text" class="contactInput">
-                </div>
-                <br>
-                <div>
-                    <label for="userMail">Correo</label>
-                    <input type="email" name="userMail"  class="contactInput" placeholder="example@example.com" required>
-                </div>
-                <br>
-                <div>
-                    <div>
-                        <label>Comentarios</label>
+        <div class="container">
+          <form class="container" action="#" method="GET" >
+              <fieldset>
+                  <legend>Informacion de contacto</legend>
+                  <div class="row">
+                    <div class="col">
+                        <label>Nombre y Apellido</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Doe">
                     </div>
-                    <textarea name="" class="contactInput" cols="30" rows="10" placeholder="Motivo de contacto"></textarea>
-                </div>
-                <div>
-                    <label>Sexo:</label>
-                    <div>
-                        <label>Masculino</label>
-                        <input type="radio" name="Sexo" value="Masculino">
-                        <label>Femenino</label>
-                        <input type="radio" name="Sexo" value="Femenino">
+                    <br>
+                    <div class="col">
+                        <label for="userMail">Correo</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@example.com">
                     </div>
-                </div>
-                <br>
-                <div>
-                    <label>Acepta recibir mails y contacto de DrinkIT</label>
-                    <input type="checkbox" name="Acepta" value="1" >
-                </div>
-                <br>
-                <select name="Producto de interes" id=""  class="contactInput">
-                    <option value="" disabled selected>Elija su producto de interes</option>
-                    <option value="DrinkIT">DrinkIT Automated Bartender</option>
-                    <option value="">Otros productos</option>
-                </select>
-                <br><br>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Reiniciar">
-                </div>
-            </fieldset>
-        </form>
+                  </div>
+                  <br>
+                  <div>
+                      <div>
+                          <label>Comentarios</label>
+                      </div>
+                      <textarea class="form-control" rows="3"></textarea>
+                  </div>
+                  <br>
+                  <div>
+                      <label>Sexo:</label>
+                      <div>
+                          <label>Masculino</label>
+                          <input type="radio" name="Sexo" value="Masculino">
+                          <label>Femenino</label>
+                          <input type="radio" name="Sexo" value="Femenino">
+                      </div>
+                  </div>
+                  <br>
+                  <div>
+                      <label>Acepta recibir mails y contacto de DrinkIT</label>
+                      <input type="checkbox" name="Acepta" value="1" >
+                  </div>
+                  <br>
+                  <select class="custom-select my-1 mr-sm-2">
+                      <option value="" disabled selected>Elija su producto de interes</option>
+                      <option value="DrinkIT">DrinkIT Automated Bartender</option>
+                      <option value="">Otros productos</option>
+                  </select>
+                  <br><br>
+                  <div>
+                      <input type="submit" value="Enviar">
+                      <input type="reset" value="Reiniciar">
+                  </div>
+              </fieldset>
+          </form>
+        </div>
         <br>
     </main>
     <footer>
